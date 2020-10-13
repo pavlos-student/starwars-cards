@@ -1,3 +1,6 @@
-<form (submit)="onFormSubmit($event)">
-  <input (input)="searchTerm = $event.target.value">
+<form (submit)="onFormSubmit($event)" class="form-width">
+  <mat-form-field class="full-width">
+    <mat-label>Enter a Star Wars Character</mat-label>
+    <input matInput (input)="searchTerm = $event.target.value" placeholder="Ex. Luke Skywalker">
+  </mat-form-field>
 </form>

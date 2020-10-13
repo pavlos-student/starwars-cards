@@ -1,0 +1,10 @@
+/* to styl the <card-list> directive*/
+:host {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.card {
+  max-width: 350px;
+  margin: 20px;
+}

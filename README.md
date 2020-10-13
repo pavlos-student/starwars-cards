@@ -44,7 +44,8 @@ An Interaction between the App Components and Service
 
 ## API Reference
 
-### Base URL: https://swapi.dev/api/
+### Base URL
+#### https://swapi.dev/api/
 
 ### Endpoints
 #### GET '/people/?search=searchTerm' 
@@ -93,6 +94,12 @@ curl https://swapi.dev/api/people/?search=luke
     ]
 }
 ```
+
+## Styling
+
+### Material Design 
+
+According to the Material Design website https://material.io/develop/web, I've used the <a href="material.angular.io">Angular Material Design</a>
 
 ## Running unit tests
 

@@ -1,4 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {CdkDragDrop, moveItemInArray, transferArrayItem} from '@angular/cdk/drag-drop';
 
 @Component({
   selector: 'app-card-list',
@@ -13,4 +14,12 @@ export class CardListComponent implements OnInit {
 
   ngOnInit(): void {}
 
+  onCardDrop(event: CdkDragDrop<any[], any>) {
+    if (event.previousContainer === event.container) {
+      moveItemInArray(event.container.data, event.previousIndex, event.currentIndex);
+    } else {
+      transferArrayItem(event.previousContainer.data,
+        event.container.data, event.previousIndex, event.currentIndex);
+    }
+  }
 }

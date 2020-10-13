@@ -101,6 +101,13 @@ curl https://swapi.dev/api/people/?search=luke
 
 According to the Material Design website https://material.io/develop/web, I've used the <a href="material.angular.io">Angular Material Design</a>
 
+### Drag & Drop feature
+
+Drag & Drop using the Angular CDK
+
+reference:
+https://www.digitalocean.com/community/tutorials/angular-drag-drop
+
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).

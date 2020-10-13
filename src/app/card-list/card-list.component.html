@@ -1,5 +1,6 @@
-<div *ngFor="let card of cards">
-  <mat-card class="card">
+<div class="cards" cdkDropList [cdkDropListData]="cards"
+     (cdkDropListDropped)="onCardDrop($event)">
+  <mat-card class="card" cdkDrag *ngFor="let card of cards">
     <mat-card-header>
       <mat-card-title>{{card.name}}</mat-card-title>
       <mat-card-subtitle>

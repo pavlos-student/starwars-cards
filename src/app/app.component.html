@@ -1,2 +1,8 @@
+<mat-toolbar>
+  <span>Flextock</span>
+</mat-toolbar>
+<span *ngIf="spinner">
+  <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+</span>
 <app-search-bar (submitted)="onSearchTerm($event)"></app-search-bar>
 <app-card-list [cards]="cardsInfo"></app-card-list>

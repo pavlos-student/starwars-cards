@@ -118,10 +118,10 @@ Run `ng test --code-coverage` to get a summary of the tests' code coverage
 
 ```
 =============================== Coverage summary ===============================
-Statements   : 62.96% ( 17/27 )
+Statements   : 68.75% ( 22/32 )
 Branches     : 0% ( 0/4 )
-Functions    : 54.55% ( 6/11 )
-Lines        : 56.52% ( 13/23 )
+Functions    : 63.64% ( 7/11 )
+Lines        : 62.96% ( 17/27 )
 ================================================================================
 ```
 ## Further help

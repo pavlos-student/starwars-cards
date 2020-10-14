@@ -8,13 +8,15 @@ import {SwapiService} from './swapi.service';
 })
 export class AppComponent {
   cardsInfo = [];
+  spinner = false;
 
   constructor(private swapiService: SwapiService) {}
 
   onSearchTerm(term: string): void {
+    this.spinner = true;
     this.swapiService.search(term).subscribe((response: any) => {
       this.cardsInfo = response.results;
-      // console.log(response.results);
+      this.spinner = false;
     });
   }
 }

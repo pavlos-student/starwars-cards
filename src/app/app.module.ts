@@ -11,6 +11,8 @@ import { MatCardModule } from '@angular/material/card';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { DragDropModule } from '@angular/cdk/drag-drop';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
     MatCardModule,
     MatFormFieldModule,
     MatInputModule,
-    DragDropModule
+    DragDropModule,
+    MatToolbarModule,
+    MatProgressBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

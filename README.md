@@ -8,9 +8,9 @@ A web application which would take a string in a form input and search for peopl
 
 - This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.6.
 
-- Uses Angular: 10.1.5
+- Angular: 10.1.5
 
-- Run on:
+- It Run on:
     - Node: 12.16.3
     - OS: darwin x64
 
@@ -33,11 +33,13 @@ npm install
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Architecture
+## Architectural logical flow
 
 ### Angular Component and Service logical flow
 
-An Interaction between the App Components and Service
+Interaction between the App's Components and Service
+
+Both SearchBarComponent and CardListComponent are children of the AppComponent. First the user inputs a text in the search bar (in the SearchBarComponent), an event emitter in that component will emit/transfer the search keyword entered by the user to the parent component (AppComponent). The latter will call the SwapiService sending the search term in order to get the meta data from a third party API server - Swapi.dev/api. The SwapiService does an HTTP GET request to get that data and sends it back to the AppComponent. Finally the AppComponent sends the meta-data to the CardListComponent to be rendered to the user.
 
 ![picture](src/assets/architecture-diagram.jpg)
 
@@ -50,7 +52,7 @@ An Interaction between the App Components and Service
 ### Endpoints
 #### GET '/people/?search=searchTerm' 
 
-- General: this api accepts a query parameter 'search' with a value input by the user 'searchTerm'
+- General: this api accepts a query parameter value input 'searchTerm', entered by the user
 - Sample Request:
 ```
 curl https://swapi.dev/api/people/?search=luke
@@ -105,10 +107,12 @@ According to the Material Design website https://material.io/develop/web, I've u
 
 Drag & Drop using the Angular CDK
 
-reference:
-https://www.digitalocean.com/community/tutorials/angular-drag-drop
+references:
 
-## Running unit tests
+- https://www.digitalocean.com/community/tutorials/angular-drag-drop
+- https://material.angular.io/cdk/drag-drop/overview
+
+## Unit & Integration tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
@@ -124,6 +128,12 @@ Functions    : 63.64% ( 7/11 )
 Lines        : 62.96% ( 17/27 )
 ================================================================================
 ```
-## Further help
+##Theoretical Questions
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+The questions & answers to the task's theoretical questions can be viewed via the following public link:
+
+https://docs.google.com/document/d/1F7V7-f9w2aAx6OhUmPRLd8URll0zF5E_h-CEb9tRTlo/edit?usp=sharing
+
+## Author
+
+Boulos Ananian, 2020

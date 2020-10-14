@@ -17,9 +17,11 @@ export class SearchBarComponent implements OnInit {
   }
 
   onFormSubmit(event: any): void {
-    // to stop the default behavior of the form when pressing the enter button
+    // to stop the default behavior of the form which happens when the user presses the enter button
     event.preventDefault();
-    // event emitter submitting the searchTerm (user input) to the app component (parent)
-    this.submitted.emit(this.searchTerm);
+    if (this.searchTerm) {
+      // event emitter submitting the searchTerm (user input) to the app component (parent)
+      this.submitted.emit(this.searchTerm);
+    }
   }
 }

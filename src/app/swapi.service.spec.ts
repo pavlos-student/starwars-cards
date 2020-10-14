@@ -2,13 +2,13 @@ import { TestBed } from '@angular/core/testing';
 
 import { SwapiService } from './swapi.service';
 import {HttpClientTestingModule, HttpTestingController} from '@angular/common/http/testing';
-import { CARDS } from './search-bar/db-test-data';
+import { CARDS } from './db-test-data';
 
 describe("SwapiService", () => {
   // service that will be used in the coming method(s)
   let swapiService: SwapiService;
   let httpTestingController: HttpTestingController;
-  const searchTerm = 'Luke';
+  const searchTerm = 'skywalker';
 
   // to run before each method in this 'describe' scope
   beforeEach(() => {
@@ -32,7 +32,7 @@ describe("SwapiService", () => {
   it('should retrieve array of people', () => {
     swapiService.search(searchTerm).subscribe(cards => {
       expect(cards).toBeTruthy('No cards returned');
-      expect(cards[0].count).toBe(1);
+      expect(cards[0].count).toBe(3);
       expect(cards[0].results[0].name).toBe('Luke Skywalker');
     });
     // mock HTTP request

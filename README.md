@@ -116,8 +116,14 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng test --code-coverage` to get a summary of the tests' code coverage
 
-Open in your browser the index.html file which is in the 'coverage' directory, after executing the above code to get a visual detailed view of the tests' code coverage
-
+```
+=============================== Coverage summary ===============================
+Statements   : 62.96% ( 17/27 )
+Branches     : 0% ( 0/4 )
+Functions    : 54.55% ( 6/11 )
+Lines        : 56.52% ( 13/23 )
+================================================================================
+```
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

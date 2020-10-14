@@ -128,6 +128,13 @@ Functions    : 63.64% ( 7/11 )
 Lines        : 62.96% ( 17/27 )
 ================================================================================
 ```
+
+## Deployment
+
+the app is deployed online, it can be accessed via the following link:
+
+https://starwars-cards.vercel.app/
+
 ##Theoretical Questions
 
 The questions & answers to the task's theoretical questions can be viewed via the following public link:

@@ -1,4 +1,4 @@
-# FlextockTask
+# Cards manual shuffle
 
 ## Overview
 
@@ -101,7 +101,7 @@ curl https://swapi.dev/api/people/?search=luke
 
 ### Material Design 
 
-According to the Material Design website https://material.io/develop/web, I've used the <a href="material.angular.io">Angular Material Design</a>
+Material Design website https://material.io/develop/web, I've used the <a href="material.angular.io">Angular Material Design</a>
 
 ### Drag & Drop feature
 
@@ -131,15 +131,9 @@ Lines        : 62.96% ( 17/27 )
 
 ## Deployment
 
-the app is deployed online, it can be accessed via the following link:
+the app deployed online, it can be accessed via the following link:
 
 https://starwars-cards.vercel.app/
-
-##Theoretical Questions
-
-The questions & answers to the task's theoretical questions can be viewed via the following public link:
-
-https://docs.google.com/document/d/1F7V7-f9w2aAx6OhUmPRLd8URll0zF5E_h-CEb9tRTlo/edit?usp=sharing
 
 ## Author
 
